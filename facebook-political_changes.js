@@ -20,7 +20,8 @@ $(document).ready(function () {
     'politic',
     'FOX News',
     'Jill Stein',
-    'Bible'
+    'Bible',
+    'Sponsored'
   ];
   $('html > head').append(style);
   function loopForever() {
