@@ -17,7 +17,8 @@ $(document).ready(function () {
     'Trump',
     'Republican',
     'Democrat',
-    'FOX News',
+    'politic',
+    'Fox News',
     'Jill Stein',
     'Bible',
     'Sponsored'
