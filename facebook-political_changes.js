@@ -20,7 +20,8 @@ $(document).ready(function () {
     'Fox News',
     'Jill Stein',
     'Bible',
-    'Sponsored'
+    'Sponsored',
+    'People You May Know'
   ];
   $('html > head').append(style);
   function loopForever() {
