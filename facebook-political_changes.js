@@ -28,8 +28,10 @@ $(document).ready(function () {
       $('._5qxm').css('background-color', '#ffffff');
       $('._5z6o').css('width', 'auto');
       $('._4a6n').css('color', '#000000');
-      $('._4a6n').css('font-size', '15px');
-      $('._4a6n').css('padding', '0');
+      $('._4a6n').css('font-size', '24px');
+      $('._4a6n').css('font-weight', '300');
+      $('._4a6n').css('padding', '0 10px');
+      $('._4a6n').css('text-align', 'left');
       $.each(words, function (key, value) {
         $('._5pat:contains(' + value + ')').replaceWith('<div class="removed_wrapper"><span>REMOVED -' + value + '</span><div></div></div>');
       });
