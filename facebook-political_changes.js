@@ -26,12 +26,11 @@ $(document).ready(function () {
       $('#rightCol').css('display', 'none');
       $('#contentArea').css('width', '100%');
       $('._5qxm').css('background-color', '#ffffff');
-      $('._5z6o').css('width', 'auto');
+      $('._5z6o').css('width', '25%');
       $('._4a6n').css('color', '#000000');
-      $('._4a6n').css('font-size', '24px');
-      $('._4a6n').css('font-weight', '300');
-      $('._4a6n').css('padding', '0 10px');
-      $('._4a6n').css('text-align', 'left');
+      $('._4a6n').css('font-size', '14px');
+      $('._4a6n').css('font-weight', 'normal');
+      $('._4a6n').css('padding', '0');
       $.each(words, function (key, value) {
         $('._5pat:contains(' + value + ')').replaceWith('<div class="removed_wrapper"><span>REMOVED -' + value + '</span><div></div></div>');
       });
