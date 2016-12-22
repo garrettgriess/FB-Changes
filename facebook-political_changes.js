@@ -15,7 +15,7 @@ $(document).ready(function () {
     'Trump',
     'Republican',
     'Democrat',
-    'Fox News',
+    'foxnews.com',
     'Bible',
     'Sponsored',
     'People You May Know'
@@ -32,7 +32,7 @@ $(document).ready(function () {
       $('._4a6n').css('font-weight', 'normal');
       $('._4a6n').css('padding', '0');
       $.each(words, function (key, value) {
-        $('._5pat:contains(' + value + ')').replaceWith('<div class="removed_wrapper"><span>REMOVED -' + value + '</span><div></div></div>');
+        $('._5pat:contains(' + value + ')').not('._5pat:contains("Garrett Griess")').replaceWith('<div class="removed_wrapper"><span>REMOVED -' + value + '</span><div></div></div>');
       });
     }, 1000);
   }
