@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name    Garrett's Facebook Changes
+// @name    Garrett's Facebook Changes - Political
 // @include http://facebook.com/*
 // @include http://*.facebook.com/*
 // @include https://facebook.com/*
