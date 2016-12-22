@@ -27,10 +27,12 @@ $(document).ready(function () {
       $('#contentArea').css('width', '100%');
       $('._5qxm').css('background-color', '#ffffff');
       $('._5z6o').css('width', '25%');
-      $('._4a6n').css('color', '#000000');
-      $('._4a6n').css('font-size', '14px');
-      $('._4a6n').css('font-weight', 'normal');
-      $('._4a6n').css('padding', '0');
+      $('._4a6n').css({
+        'color': '#000000',
+        'font-size': '14px',
+        'font-weight': 'normal',
+        'padding': '0'
+      });
       $.each(words, function (key, value) {
         $('._5pat:contains(' + value + ')').not('._5pat:contains("Garrett Griess")').replaceWith('<div class="removed_wrapper"><span>REMOVED -' + value + '</span><div></div></div>');
       });
