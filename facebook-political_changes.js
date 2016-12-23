@@ -25,7 +25,10 @@ $(document).ready(function () {
     setInterval(function () {
       $('#rightCol').css('display', 'none');
       $('#contentArea').css('width', '100%');
-      $('._5qxm').css('background-color', '#ffffff');
+      $('._5qxm').css({
+        'background-color': '#ffffff',
+        'background-image': 'none'
+      });
       $('._5z6o').css('width', '25%');
       $('._4a6n').css({
         'color': '#000000',
