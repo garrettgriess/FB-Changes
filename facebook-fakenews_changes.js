@@ -10,6 +10,14 @@
 $(document).ready(function () {
   var style = $('<style>.removed_wrapper { margin: 30px 0 50px; padding: 0 12px; text-align: center; } .removed_wrapper span { padding: 4px; background-color: #e9ebee; text-shadow: 1px 1px 0 #ffffff; color: #90949c; } .removed_wrapper div { height: 2px; border-bottom: 1px solid #90949c; box-shadow: 1px 1px #ffffff; margin: -11px; }</style>')
   var words = [
+    'Trump',
+    'President',
+    'Sponsored',
+    'People You May Know',
+    'Buy and Sell Groups Near You',
+    'foxnews.com',
+    'bible',
+    'jesus',
     '21stcenturywire.com',
     '70news.wordpress.com',
     'abcnews.com.co',
@@ -113,7 +121,6 @@ $(document).ready(function () {
     'thefreethoughtproject.com',
     'thelapine.ca',
     'thenewsnerd.com',
-    'theonion.com',
     'theracketreport.com',
     'therundownlive.com',
     'thespoof.com',
@@ -132,12 +139,7 @@ $(document).ready(function () {
     'wnd.com',
     'worldnewsdailyreport.com',
     'worldtruth.tv',
-    'yournewswire.com',
-    'Sponsored',
-    'People You May Know',
-    'foxnews.com',
-    'christ',
-    'bible'
+    'yournewswire.com'
   ];
   $('html > head').append(style);
   function loopForever() {
