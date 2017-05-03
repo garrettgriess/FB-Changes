@@ -1,4 +1,4 @@
-#Greasemonkey
+# Greasemonkey
 
 Firefox Addon: https://addons.mozilla.org/en-US/firefox/addon/greasemonkey
 
@@ -8,7 +8,7 @@ Political Changes Script: https://github.com/garrettgriess/FB-Changes/blob/maste
 
 Screen Shot: https://github.com/garrettgriess/FB-Changes/blob/master/facebook-political_changes.gif
 
-#Facebook Political Changes Plugins: (older)
+# Facebook Political Changes Plugins: (older)
 
 Firefox Add-On: https://github.com/garrettgriess/greasemonkey-scripts/blob/master/fb_changes-0.10-an%2Bfx.xpi
 
