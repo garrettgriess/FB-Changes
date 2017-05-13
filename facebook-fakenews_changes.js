@@ -142,8 +142,11 @@ $(document).ready(function () {
     'yournewswire.com'
   ];
   $('html > head').append(style);
+  $('body').append('<div id="count" style="position:fixed;top:2px;left:2px;color:#ffffff;opacity:0.3;z-index:9999">0</div>');
+  ggf = 0;
   function loopForever() {
     setInterval(function () {
+      $('#count').text(ggf++);
       $('._5qxm').css({
         'background-color': '#ffffff',
         'background-image': 'none'
@@ -158,7 +161,7 @@ $(document).ready(function () {
       $.each(words, function (key, value) {
         $('._5pat:contains(' + value + ')').not('._5pat:contains("Garrett Griess")').replaceWith('<div class="removed_wrapper"><span>REMOVED -' + value + '</span><div></div></div>');
       });
-    }, 1000);
+    }, 1500);
   }
   $(loopForever);
 });
