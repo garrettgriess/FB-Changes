@@ -16,6 +16,7 @@ $(document).ready(function () {
     'People You May Know',
     'Buy and Sell Groups Near You',
     'foxnews.com',
+    'Fox News',
     'bible',
     'jesus',
     '21stcenturywire.com',
@@ -148,7 +149,7 @@ $(document).ready(function () {
   function startLoop() {
     var loop = setInterval(function () {
       $(loopActions);
-    }, 1500);
+    }, 750);
     $('div#count').click(function () {
       ggf = 0;
       clearInterval(loop);
@@ -169,7 +170,7 @@ $(document).ready(function () {
       'padding': '0'
     });
     $.each(words, function (key, value) {
-      $('._5pat:contains(' + value + ')').not('._5pat:contains("Garrett Griess")').replaceWith('<div class="removed_wrapper"><span>REMOVED -' + value + '</span><div></div></div>');
+      $('._5pat:contains(' + value + ')').replaceWith('<div class="removed_wrapper"><span>REMOVED -' + value + '</span><div></div></div>');
     });
   };
   //Start Loop Automatically
