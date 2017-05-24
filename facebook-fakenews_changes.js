@@ -142,26 +142,40 @@ $(document).ready(function () {
     'yournewswire.com'
   ];
   $('html > head').append(style);
-  $('body').append('<div id="count" style="position:fixed;top:2px;left:2px;color:#ffffff;opacity:0.3;z-index:9999">0</div>');
-  ggf = 0;
-  function loopForever() {
-    setInterval(function () {
-      $('#count').text(ggf++);
-      $('._5qxm').css({
-        'background-color': '#ffffff',
-        'background-image': 'none'
-      });
-      $('._5z6o').css('width', '25%');
-      $('._4a6n').css({
-        'color': '#000000',
-        'font-size': '14px',
-        'font-weight': 'normal',
-        'padding': '0'
-      });
-      $.each(words, function (key, value) {
-        $('._5pat:contains(' + value + ')').not('._5pat:contains("Garrett Griess")').replaceWith('<div class="removed_wrapper"><span>REMOVED -' + value + '</span><div></div></div>');
-      });
+  $('body').append('<div id="count" style="position:fixed;top:2px;left:2px;color:#ffffff;opacity:0.3;z-index:9999;cursor:pointer;">0</div>');
+  var ggf = 0;
+  //Loop Interval and Click to Stop  
+  function startLoop() {
+    var loop = setInterval(function () {
+      $(loopActions);
     }, 1500);
-  }
-  $(loopForever);
+    $('div#count').click(function () {
+      ggf = 0;
+      clearInterval(loop);
+    });
+  };
+  //Loop Functions
+  function loopActions() {
+    $('#count').text(ggf++);
+    $('._5qxm').css({
+      'background-color': '#ffffff',
+      'background-image': 'none'
+    });
+    $('._5z6o').css('width', '25%');
+    $('._4a6n').css({
+      'color': '#000000',
+      'font-size': '14px',
+      'font-weight': 'normal',
+      'padding': '0'
+    });
+    $.each(words, function (key, value) {
+      $('._5pat:contains(' + value + ')').not('._5pat:contains("Garrett Griess")').replaceWith('<div class="removed_wrapper"><span>REMOVED -' + value + '</span><div></div></div>');
+    });
+  };
+  //Start Loop Automatically
+  $(startLoop);
+  //Start Loop (or reset) Manually with Double Click
+  $('div#count').dblclick(function () {
+    $(startLoop);
+  });
 });
