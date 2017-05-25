@@ -144,14 +144,17 @@ $(document).ready(function () {
     'yournewswire.com'
   ];
   $('html > head').append(style);
-  $('body').append('<div id="count" style="position:fixed;top:2px;left:2px;color:#ffffff;opacity:0.3;z-index:9999;cursor:pointer;">0</div>');
-  $('._2s1y').css('background', '#00779b repeating-linear-gradient(6deg, #009ecf 0px, #009ecf 14px, #00779b 14px, #00779b 28px, #006482 28px, #006482 42px, #005069 42px, #005069 57px, #006482 57px, #006482 71px, #00779b 71px, #00779b 85px) repeat fixed 0 0');
+  $('body').append('<div id="count" style="position:fixed;top:2px;right:10px;color:#000000;font-weight:bold;opacity:0.4;z-index:9999;cursor:pointer;font-size:2.5em;letter-spacing:-4px;">0</div>');
+  $('._2s1y').css({
+    'background': '#00779b repeating-linear-gradient(350deg, #009ecf 0px, #009ecf 40px, #00779b 40px, #00779b 80px, #006482 80px, #006482 120px, #005069 120px, #005069 160px, #006482 160px, #006482 200px, #00779b 200px, #00779b 240px) repeat fixed 0 0',
+    'opacity': '0.85'
+  });
   var ggf = 0;
   //Loop Interval and Click to Stop  
   function startLoop() {
     var loop = setInterval(function () {
       $(loopActions);
-    }, 750);
+    }, 500);
     $('div#count').click(function () {
       ggf = 0;
       clearInterval(loop);
@@ -160,6 +163,7 @@ $(document).ready(function () {
   //Loop Functions
   function loopActions() {
     $('#count').text(ggf++);
+    $('._2s1y').css('background-position', '0 ' + - ggf + 'px');
     $('._5qxm').css({
       'background-color': '#ffffff',
       'background-image': 'none'
