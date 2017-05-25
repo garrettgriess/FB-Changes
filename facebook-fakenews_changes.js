@@ -15,7 +15,6 @@ $(document).ready(function () {
     'Sponsored',
     'People You May Know',
     'Buy and Sell Groups Near You',
-    'Events You May Like',
     'foxnews.com',
     'Fox News',
     'bible',
@@ -145,6 +144,7 @@ $(document).ready(function () {
   ];
   $('html > head').append(style);
   $('body').append('<div id="count" style="position:fixed;top:2px;left:2px;color:#ffffff;opacity:0.3;z-index:9999;cursor:pointer;">0</div>');
+  $('._2s1y').css('background', '#00779b linear-gradient(300deg, #009ecf 0%, #009ecf 20%, #008bb5 20%, #008bb5 40%, #00779b 40%, #00779b 60%, #006482 60%, #006482 80%, #005069 80%, #005069 100%\t) repeat fixed 0 0');
   var ggf = 0;
   //Loop Interval and Click to Stop  
   function startLoop() {
