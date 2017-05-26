@@ -9,11 +9,11 @@
 // ==/UserScript==
 $(document).ready(function () {
   if (window.top == window.self) {
-    var style = $('<style>#contentArea { width: 100% !important; left: 0; } #rightCol { display: none; }</style><style>.removed_wrapper { margin: 30px 0 50px; padding: 0 12px; text-align: center; } .removed_wrapper span { padding: 4px; background-color: #e9ebee; text-shadow: 1px 1px 0 #ffffff; color: #90949c; } .removed_wrapper div { height: 2px; border-bottom: 1px solid #90949c; box-shadow: 1px 1px #ffffff; margin: -11px; }</style>')
     var words = [
       'Trump',
       'President',
       'Sponsored',
+      'Suggested Post',
       'People You May Know',
       'Buy and Sell Groups Near You',
       'Events You May Like',
@@ -144,18 +144,20 @@ $(document).ready(function () {
       'worldtruth.tv',
       'yournewswire.com'
     ];
+    var style = $('<style>#contentArea { width: 100% !important; left: 0; } #rightCol { display: none; }</style><style>.removedNote { z-index:9999; margin: 30px 0 50px; padding: 0 12px; text-align: center; cursor: pointer; } .removedNote span { padding: 4px; background-color: #e9ebee; text-shadow: 1px 1px 0 #ffffff; color: #90949c; } .removedNote div { height: 2px; border-bottom: 1px solid #90949c; box-shadow: 1px 1px #ffffff; margin: -11px; }</style>')
+    var ggf = 0;
+    var ggi = 0;
     $('html > head').append(style);
     $('body').append('<div id="count" style="position:fixed;top:2px;right:10px;color:#000000;font-weight:bold;opacity:0.4;z-index:9999;cursor:pointer;font-size:2.5em;letter-spacing:-4px;">0</div>');
     $('._2s1y').css({
       'background': '#00779b repeating-linear-gradient(350deg, #009ecf 0px, #009ecf 40px, #00779b 40px, #00779b 80px, #006482 80px, #006482 120px, #005069 120px, #005069 160px, #006482 160px, #006482 200px, #00779b 200px, #00779b 240px) repeat fixed 0 0',
       'opacity': '0.85'
     });
-    var ggf = 0;
     //Loop Interval and Click to Stop  
     function startLoop() {
       var loop = setInterval(function () {
         $(loopActions);
-      }, 500);
+      }, 750);
       $('div#count').click(function () {
         ggf = 0;
         clearInterval(loop);
@@ -177,9 +179,13 @@ $(document).ready(function () {
         'padding': '0'
       });
       $.each(words, function (key, value) {
-        $('._5pat:contains(' + value + ')').replaceWith('<div class="removed_wrapper"><span>REMOVED -' + value + '</span><div></div></div>');
+        $('._5pat:contains(' + value + ')').not('.hidden_elem').hide().removeClass('_5pat').addClass('removedPost').before('<div class="removedNote"><span>REMOVED -' + value + '</span><div></div></div>');
       });
     };
+    //Un-Hide Post
+    $(document).on('click', '.removedNote', function () {
+      $(this).next('.removedPost').fadeToggle();
+    });
     //Start Loop Automatically
     $(startLoop);
     //Start Loop (or reset) Manually with Double Click
