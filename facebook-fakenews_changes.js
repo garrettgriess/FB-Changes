@@ -17,6 +17,7 @@ $(document).ready(function () {
       'People You May Know',
       'Buy and Sell Groups Near You',
       'Events You May Like',
+      'Facebook Sports',
       'foxnews.com',
       'Fox News',
       'bible',
