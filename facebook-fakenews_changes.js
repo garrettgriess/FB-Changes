@@ -17,6 +17,7 @@ $(document).ready(function () {
       'People You May Know',
       'Buy and Sell Groups Near You',
       'Events You May Like',
+      'Facebook Sports',
       'are now friends.',
       'foxnews.com',
       'Fox News',
