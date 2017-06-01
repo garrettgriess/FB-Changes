@@ -17,7 +17,7 @@ $(document).ready(function () {
       'People You May Know',
       'Buy and Sell Groups Near You',
       'Events You May Like',
-      'Facebook Sports',
+      'are now friends.',
       'foxnews.com',
       'Fox News',
       'bible',
@@ -180,7 +180,7 @@ $(document).ready(function () {
         'padding': '0'
       });
       $.each(words, function (key, value) {
-        $('._5pat:contains(' + value + ')').not('.hidden_elem').hide().removeClass('_5pat').addClass('removedPost').before('<div class="removedNote"><span>REMOVED -' + value + '</span><div></div></div>');
+        $('._5pat:contains(' + value + ')').not('.hidden_elem').hide().removeClass('_5pat').addClass('removedPost').before('<div class="removedNote"><span>REMOVED -' + value + ' </span><div></div></div>');
       });
     };
     //Un-Hide Post
