@@ -15,6 +15,7 @@ $(document).ready(function () {
       'Sponsored',
       'Suggested Post',
       'People You May Know',
+      'Topics to Follow',
       'Buy and Sell Groups Near You',
       'Events You May Like',
       'Facebook Sports',
