@@ -20,6 +20,7 @@ $(document).ready(function () {
       'Events You May Like',
       'Facebook Sports',
       'are now friends.',
+      'years of friendship on Facebook!',
       'foxnews.com',
       'Fox News',
       'bible',
