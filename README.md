@@ -1,6 +1,8 @@
-# Greasemonkey
+# Tampermonkey
 
-Firefox Addon: https://addons.mozilla.org/en-US/firefox/addon/greasemonkey
+Add-on: http://tampermonkey.net
+
+Greasemonkey: (no good for FF57) https://addons.mozilla.org/en-US/firefox/addon/greasemonkey
 
 Fake News Changes Script: https://github.com/garrettgriess/FB-Changes/blob/master/facebook-fakenews_changes.js
 
