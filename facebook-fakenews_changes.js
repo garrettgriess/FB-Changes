@@ -162,13 +162,13 @@ $(document).ready(function () {
 			$(this).next('.removedPost').fadeToggle();
 		});
 		//Start Loop Automatically
-		$(startLoop);
+			$(startLoop);
 		//Start Loop (or reset) Manually with Double Click
 		$('div#count').dblclick(function () {
 			$(startLoop);
 		});
 	}
-    //Loop Interval and Click to Stop
+    	//Loop Interval and Click to Stop
 	function startLoop() {
 		var loop = setInterval(function () {
 			$(loopActions);
