@@ -371,17 +371,23 @@ $(document).ready(function () {
 			$(this).next('.removedPost').fadeToggle();
 		});
 		//Start Loop Automatically
-			$(startLoop);
+		$(startLoop);
 		//Start Loop (or reset) Manually with Double Click
 		$('div#count').dblclick(function () {
 			$(startLoop);
 		});
 	}
-    	//Loop Interval and Click to Stop
+	//Change contains to be case-insensitive
+	$.expr[":"].contains = $.expr.createPseudo(function(arg) {
+		return function( elem ) {
+			return $(elem).text().toUpperCase().indexOf(arg.toUpperCase()) >= 0;
+		};
+	});
+    //Loop Interval and Click to Stop
 	function startLoop() {
 		var loop = setInterval(function () {
 			$(loopActions);
-		}, 750);
+		}, 500);
 		$('div#count').click(function () {
 			ggf = 0;
 			clearInterval(loop);
