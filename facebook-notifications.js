@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name    Garrett's Facebook Changes - Notifications
-// @include https://www.facebook.com/GIIndependent/notifications/
+// @include https://www.facebook.com/*/notifications/
 // @require http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js
 // @grant   none
 // ==/UserScript==
