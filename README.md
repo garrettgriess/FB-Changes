@@ -4,11 +4,11 @@ Add-on: http://tampermonkey.net
 
 Greasemonkey: (no good for FF57) https://addons.mozilla.org/en-US/firefox/addon/greasemonkey
 
-Fake News Changes Script: https://github.com/garrettgriess/FB-Changes/blob/master/facebook-fakenews_changes.js
+Fake News Changes Script (out of date): https://github.com/garrettgriess/FB-Changes/blob/master/facebook-fakenews_changes.js
 
 Political Changes Script (out of date): https://github.com/garrettgriess/FB-Changes/blob/master/facebook-political_changes.js
 
-Screen Shot: https://github.com/garrettgriess/FB-Changes/blob/master/facebook-political_changes.gif
+Screen Shot (out of date): https://github.com/garrettgriess/FB-Changes/blob/master/facebook-political_changes.gif
 
 # Facebook Political Changes Plugins: (out of date)
 
